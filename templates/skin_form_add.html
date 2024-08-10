@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/add.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>DATA_TITLE PEMAIN</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar" style="background-color: #5f004f;">
+        <div class="container-fluid">
+            <a class="navbar-info text-light" href="index.php">
+                <img src="assets/images/logo.webp" height="60" alt="logo.webp" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="index.php">SPK PEMLIHIAN HEWAN
+                            QURBAN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="kriteria.php">Daftar Kriteria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="alternatif.php">Daftar Alternatif</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- form tambah data start -->
+    <div class="container py-5 mt-5 mb-5 d-flex justify-content-center">
+        <div class="cardAdd px-1 py-4">
+            <div class="cardAdd-body">
+                <div class="card-header">
+                    <h3 class="my-2 text-center">DATA_TITLE Data Hewan</h3>
+                </div>
+                <div class="card-body">
+                    <form action="#" method="POST" id="form-pemain" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-label mt-2">Kode Alternatif</label>
+                                    <div class="input-group">
+                                        <select class="form-select" name="alternatif" value="LIST_ALTERNATIF"
+                                            id="alternatif" required>
+                                            DATA_ALTERNATIF
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <!-- <div class="form-group">
+                                    <label class="form-label  mt-2">kriteria</label>
+                                    <div class="input-group">
+                                        <select class="form-select" name="alternatif" value="LIST_ALTERNATIF"
+                                            id="alternatif" required>
+                                            DATA_KRITERIA
+                                        </select>
+                                    </div>
+                                </div> -->
+                                DATA_KRITERIA
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label class="form-label mt-2">Upload Foto</label>
+                                <div class="col-sm-14">
+                                    <input class="form-control" type="file" name="foto" value="DATA_FOTO" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column text-center px-5 mt-4 mb-3">
+                            <button type="submit" class="btn text-white btn-opacity-50" name="btn-add"
+                                style="background-color: #5f004f;" id="btn-save">BUTTON</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- form tambah data end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>

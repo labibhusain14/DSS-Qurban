@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Detail JUDUL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eee;
+        }
+
+
+        #navbar {
+            color: white;
+            font-weight: bold;
+        }
+
+        #navbar .nav-item:hover {
+            border-bottom: 3px solid white;
+            /* border-image: linear-gradient(to right, #cd03ff, #5f004f); */
+            /* border-image-slice: 1; */
+
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top " id="navbar" style="background-color: #5f004f;">
+        <div class="container-fluid">
+            <a class="navbar-info text-light" href="index.php">
+                <img src="assets/images/logo.webp" height="60" alt="logo.webp" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="index.php">SPK PEMLIHIAN HEWAN
+                            QURBAN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="kriteria.php">Daftar Kriteria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="alternatif.php">Daftar Alternatif</a>
+                    </li>
+                </ul>
+                <form class="d-flex" method="post" action="">
+                    <input class="form-control me-2" type="cari" name="search" placeholder="cari NAMA" aria-label="cari"
+                        size="40" autocomplete="off">
+                    <button class="btn btn-outline-light" type="submit" name="btn-search" width="30px">Cari</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-3">
+        <div class="row">
+            <div class="col">
+                <div class="card my-5 mx-5">
+                    <div class="card-header text-center">
+                        <h3 class="my-0">Daftar DATA_MAIN_TITLE</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-stripped table-bordered text-center">
+                                <thead class="table-info">
+                                    DATA_TABEL_HEADER
+                                </thead>
+                                <tbody>
+                                    DATA_TABEL
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card my-5">
+                    <div class="card-header text-center">
+                        <h3 class="my-0">DATA_TITLE Data</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                            <div class="mb-3">
+                                <label for="kode" class="form-label">Kode DATA_FORM_LABEL</label>
+                                <input type="text" class="form-control" id="kode" name="kode" value="DATA_KODE"
+                                    placeholder="Masukkan kode DATA_FORM_LABEL" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">Nama DATA_FORM_LABEL</label>
+                                <input type="text" class="form-control" id="nama" name="nama" value="DATA_NAMA"
+                                    placeholder="Masukkan nama DATA_FORM_LABEL" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bobot" class="form-label">Bobot</label>
+                                <input type="number" class="form-control" id="bobot" name="bobot" value="DATA_BOBOT"
+                                    placeholder="Masukkan nama DATA_FORM_LABEL" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="status" class="form-label">Status</label>
+                                <select class="form-control" id="status" name="status" required>
+                                    <option value="benefit" selected>Benefit</option>
+                                    <option value="cost">Cost</option>
+                                </select>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-info text-white" name="submit"
+                                    id="submit">DATA_BUTTON</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
